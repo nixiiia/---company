@@ -13,38 +13,40 @@
 </head>
 
 <body>
-    <header class="header header__main">
-        <div class="container">
-            <div class="header__inner">
-                <div class="logo-container">
-                    <a href="#" class="logo">
-                        <img class="logo__img" src="./img/logo.webp" alt="Логотип ЦРТР Company">
-                    </a>
-                </div>
-                <a class="header__link" href="#footer">
-                    Наши контакты
+
+    <header class="header__main">
+        <div class="header__inner">
+            <div class="header__container">
+                <a href="index.html" class="logo">
+                    <img class="main__logo-img" src="./img/logo.webp" alt="Логотип ЦРТР Company">
                 </a>
-                <div class="text-container">
-                    <h1 class="header__title">Добро пожаловать!</h1>
-                </div>
+                <h1 class="header-main__title">Добро пожаловать!</h1>
             </div>
+            <a class="header-main__link" href="#footer">
+                Наши контакты
+            </a>
         </div>
     </header>
 
     <section class="main">
-        <section class="menu">
+        <div class="main__menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <section class="main__menu">
             <nav>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Новости</a>
+                <ul class="main__menu-list">
+                    <li class="main__menu-item">
+                        <a class="menu__link" href="news.html">Новости</a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Услуги</a>
+                    <li class="main__menu-item">
+                        <a class="menu__link" href="#services">Услуги</a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Портфолио</a>
+                    <li class="main__menu-item">
+                        <a class="menu__link" href="portfolio.html">Портфолио</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="main__menu-item">
                         <a class="menu__link" href="#order">Заказать</a>
                     </li>
                 </ul>
@@ -66,31 +68,35 @@
                         <h1 class="info__list-title">
                             Мы предлогаем:
                         </h1>
+
                         <div class="info__box">
                             <img class="info__img" src="./img/print.jpg" alt="">
                             <h3 class="info__subtitle">Собственное производство</h3>
                         </div>
                         <div class="info__box">
-                            <img class="info__img" src="./img/consultation.jpg" alt="">
-                            <h3 class="info__subtitle">Консультация от специалистов</h3>
-                        </div>
-                        <div class="info__box">
                             <img class="info__img" src="./img/office.webp" alt="">
                             <h3 class="info__subtitle">Всё для офиса и учёбы</h3>
+                        </div>
+
+
+                        <div class="info__box">
+                            <img class="info__img" src="./img/consultation.jpg" alt="">
+                            <h3 class="info__subtitle">Консультация от специалистов</h3>
                         </div>
                         <div class="info__box">
                             <img class="info__img" src="./img/design.webp" alt="">
                             <h3 class="info__subtitle">Индивидуальный дизайн для вас</h3>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="services__inner">
-                    <h1 class="title">Наши услуги</h1>
+                    <h1 class="services__title">Наши услуги</h1>
                     <div class="services__list">
                         <div class="services__item">
                             <div class="services__subtitle-box">
@@ -207,24 +213,24 @@
             </div>
         </section>
 
-        <footer class="footer" id="footer">
-            <div class="container">
-                <div class="footer__inner">
-                    <a class="footer__link" href="#">Политика конфиденциальности</a>
-                    <a class="footer__contacts-link" href="tel:+380506777777">
-                        <img class="footer__contacts-img" src="img/phone.svg" alt="">
-                        <span>+00000000000</span>
-                    </a>
-                    <a class="footer__contacts-link" href="mailto:elektrobikeukr@gmail.com">
-                        <img class="footer__contacts-img" src="img/mail.svg" alt="">
-                        <span>-------@gmail.com</span>
-                    </a>
-
-                </div>
-            </div>
-        </footer>
-
     </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="footer__link" href="#">Политика конфиденциальности</a>
+                <a class="footer__contacts-link" href="tel:+380506777777">
+                    <img class="footer__contacts-img" src="img/phone.svg" alt="">
+                    <span>+00000000000</span>
+                </a>
+                <a class="footer__contacts-link" href="mailto:elektrobikeukr@gmail.com">
+                    <img class="footer__contacts-img" src="img/mail.svg" alt="">
+                    <span>-------@gmail.com</span>
+                </a>
+
+            </div>
+        </div>
+    </footer>
 
     <script src="./scripts/script.js"></script>
 

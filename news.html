@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,79 +10,157 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="logo">
-                    <img class="logo__img" src="./img/logo.svg" alt="Логотип ЦРТР Company">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <img class="logo__img" src="./img/logo.webp" alt="Логотип ЦРТР Company">
+                    </a>
+                </div>
+                <a class="header__link" href="#footer">
+                    Наши контакты
                 </a>
-                <nav>
-                    <ul>
-                        <li><a href="news.html">Новости</a></li>
-                        <li><a href="services.html">Услуги</a></li>
-                        <li><a href="portfolio.html">Портфолио</a></li>
-                        <li><a href="#order">Заказать</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </header>
 
-    <section class="news">
+    <div class="wrapper">
+        <div class="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <section class="menu">
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="news.html">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#services">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html#order">Заказать</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <div class="news__inner">
+                    <h1 class="news__title">
+                        Наши новости
+                    </h1>
+                    <div class="news__list">
+                        <div class="news__item">
+                            <h3 class="news__subtitle">
+                                Новая линейка сувениров: уникальные подарки для вашего бизнеса!
+                            </h3>
+                            <p class="news__descr" id="news1">
+                                У нас появилась новая коллекция сувениров, специально разработанная для поддержки вашего
+                                бизнеса. От персонализированных ключниц и магнитов до стильных футболок с логотипом - у
+                                нас
+                                есть идеальный подарок для ваших клиентов и партнеров.
+                            </p>
+                            <p class="news__data">
+                                01 октября 2023
+                            </p>
+                            <button class="news__btn" id="btn1"></button>
+                        </div>
+                        <div class="news__item">
+                            <h3 class="news__subtitle">
+                                Новейшие технологии в полиграфии: высокое качество и индивидуальный дизайн!
+                            </h3>
+                            <p class="news__descr" id="news2">
+                                Мы инвестировали в самые передовые технологии в сфере полиграфии, чтобы предоставить вам
+                                продукцию высшего качества. От брошюр и буклетов до уникальных упаковок - мы гарантируем
+                                вам
+                                индивидуальный дизайн и выдающееся качество.
+                            </p>
+                            <p class="news__data">
+                                15 октября 2023
+                            </p>
+                            <button class="news__btn" id="btn2"></button>
+                        </div>
+                        <div class="news__item">
+                            <h3 class="news__subtitle">
+                                Новые возможности штемпельной продукции: создайте свою уникальную печать!
+                            </h3>
+                            <p class="news__descr" id="news3">
+                                Наша компания предоставляет вам возможность создать собственную уникальную печать.
+                                Выберите
+                                из различных стилей, шрифтов и цветов, чтобы сделать вашу штемпельную продукцию
+                                по-настоящему уникальной.
+                            </p>
+                            <p class="news__data">
+                                01 ноября 2023
+                            </p>
+                            <button class="news__btn" id="btn3"></button>
+                        </div>
+                        <div class="news__item">
+                            <h3 class="news__subtitle">
+                                Специальное предложение: скидка 20% на первый заказ для новых клиентов!
+                            </h3>
+                            <p class="news__descr" id="news4">
+                                Мы ценим новых клиентов и хотим предложить вам особое приветственное предложение.
+                                Сделайте
+                                ваш первый заказ у нас и получите скидку 20% на всю продукцию.
+                            </p>
+                            <p class="news__data">
+                                10 ноября 2023
+                            </p>
+                            <button class="news__btn" id="btn4"></button>
+                        </div>
+                        <div class="news__item">
+                            <h3 class="news__subtitle">
+                                Наши работы: примеры успешных проектов для лучших клиентов!
+                            </h3>
+                            <p class="news__descr" id="news5">
+                                Посмотрите наше портфолио, чтобы увидеть примеры наших успешных проектов для известных
+                                клиентов. Мы гордимся нашей работой и готовы помочь вам достичь таких же впечатляющих
+                                результатов.
+                            </p>
+                            <p class="news__data">
+                                20 ноября 2023
+                            </p>
+                            <button class="news__btn" id="btn5"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer" id="footer">
         <div class="container">
-            <div class="news__inner">
-                <h1>О компании "ЦРТР"</h1>
-                
+            <div class="footer__inner">
+                <a class="footer__link" href="#">Политика конфиденциальности</a>
+                <a class="footer__contacts-link" href="tel:+380506777777">
+                    <img class="footer__contacts-img" src="img/phone.svg" alt="">
+                    <span>+00000000000</span>
+                </a>
+                <a class="footer__contacts-link" href="mailto:elektrobikeukr@gmail.com">
+                    <img class="footer__contacts-img" src="img/mail.svg" alt="">
+                    <span>-------@gmail.com</span>
+                </a>
+
             </div>
         </div>
-    </section>
-    
-    <!-- Новости компании "Реклама&Сувениры"
-1. Новая линейка сувениров: уникальные подарки для вашего бизнеса!
-Дата: 01 октября 2023
+    </footer>
 
-У нас появилась новая коллекция сувениров, специально разработанная для поддержки вашего бизнеса. От персонализированных ключниц и магнитов до стильных футболок с логотипом - у нас есть идеальный подарок для ваших клиентов и партнеров.
+    <script src="./scripts/script.js"></script>
 
-Узнать больше
-
-2. Новейшие технологии в полиграфии: высокое качество и индивидуальный дизайн!
-Дата: 15 октября 2023
-
-Мы инвестировали в самые передовые технологии в сфере полиграфии, чтобы предоставить вам продукцию высшего качества. От брошюр и буклетов до уникальных упаковок - мы гарантируем вам индивидуальный дизайн и выдающееся качество.
-
-Узнать больше
-
-3. Новые возможности штемпельной продукции: создайте свою уникальную печать!
-Дата: 01 ноября 2023
-
-Наша компания предоставляет вам возможность создать собственную уникальную печать. Выберите из различных стилей, шрифтов и цветов, чтобы сделать вашу штемпельную продукцию по-настоящему уникальной.
-
-Узнать больше
-
-4. Специальное предложение: скидка 20% на первый заказ для новых клиентов!
-Дата: 10 ноября 2023
-
-Мы ценим новых клиентов и хотим предложить вам особое приветственное предложение. Сделайте ваш первый заказ у нас и получите скидку 20% на всю продукцию.
-
-Заказать сейчас
-
-5. Наши работы: примеры успешных проектов для лучших клиентов!
-Дата: 20 ноября 2023
-
-Посмотрите нашу портфолио, чтобы увидеть примеры наших успешных проектов для известных клиентов. Мы гордимся нашей работой и готовы помочь вам достичь таких же впечатляющих результатов.
-
-Посмотреть портфолио
-
-6. Подписывайтесь на нашу рассылку, чтобы быть в курсе всех новостей!
-Дата: Всегда актуально
-
-Хотите получать свежие новости о наших продуктах и акциях прямо в вашей почте? Подпишитесь на нашу рассылку и не упустите ни одной важной информации.
-
-Подписаться сейчас
-
-Следите за нашими новостями и оставайтесь в курсе всех новых разработок и акций от компании "Реклама&Сувениры"! -->
 
 </body>
+
 </html>
